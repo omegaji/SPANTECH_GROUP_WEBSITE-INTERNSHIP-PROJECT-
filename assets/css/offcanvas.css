@@ -1,0 +1,76 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+
+
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 800px) {
+	html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out; display:inline-block; width:100%;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0px;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -56%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width:49%; /* 6 columns */ z-index:999999;
+  }
+}
+
+@media screen and (max-width: 768px){
+.row-offcanvas-left .sidebar-offcanvas{ left:-53%;}
+}
+@media screen and (max-width: 760px){
+ 
+.row-offcanvas-left .sidebar-offcanvas{ left:-52%;}
+}
+@media screen and (max-width: 480px){
+.row-offcanvas-left .sidebar-offcanvas{ left:-53%;}
+}
+@media screen and (max-width: 400px){
+.row-offcanvas-left .sidebar-offcanvas{left:-79%;}
+.sidebar-offcanvas{width: 74%;}
+.row-offcanvas-left.active{left: 74%;}
+}
+
+
+
+
+
